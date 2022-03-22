@@ -1,0 +1,12 @@
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\bin\Debug\net6.0\MyEmployees.Shared.deps.json
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\bin\Debug\net6.0\MyEmployees.Shared.dll
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\bin\Debug\net6.0\MyEmployees.Shared.pdb
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.csproj.AssemblyReference.cache
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.AssemblyInfoInputs.cache
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.AssemblyInfo.cs
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.dll
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\refint\MyEmployees.Shared.dll
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\MyEmployees.Shared.pdb
+C:\Users\Sindr\source\repos\MyEmployees\MyEmployees\Shared\obj\Debug\net6.0\ref\MyEmployees.Shared.dll

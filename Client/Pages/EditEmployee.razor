@@ -1,0 +1,76 @@
+﻿@using MyEmployees.Client.Services
+@using MyEmployees.Server.Models
+
+@inject IEmployeeService EmployeeService
+@inject NavigationManager NavigationManager
+
+<div class="row">
+    <div class="col">
+        <DisplayEmployees OnEmployeeSelected="SelectedEmployee"></DisplayEmployees>                     <!--implements the DisplayEmployees components-->
+    </div>
+    <div class="col">
+        <div class="d-flex flex-column justify-content-center border">  
+            @if(empNotPresent)                                                                       //if no selection is made
+            {
+                <div class="header d-flex bg-dark justify-content-center">
+                    <p class="text-warning m-2">No employees selected.</p>
+                </div>
+                <div class="body d-flex justify-content-center mt-2 mb-2">
+                    <p class="text-black m-2">Please select an employee from the list.</p>
+                </div>
+            }
+            else
+            {
+                <div class="header d-flex bg-dark justify-content-center">
+                    <p class="text-white m-2">Edit employee: #@updatedEmployee.id</p>
+                </div>
+                <div class="body d-flex flex-column justify-content-center m-3">
+                    <div class="input-group d-flex justify-content-center mb-3">
+                        <span class="input-group-text w-30 justify-content-center" id="basic-addon1">First name: </span>
+                        <input type="text" class="form-control" placeholder="@employee.firstname" aria-label="Firstname" aria-describedby="basic-addon1" @bind-value="updatedEmployee.firstname">
+                    </div>
+                    <div class="input-group d-flex justify-content-center mb-3">
+                        <span class="input-group-text w-30 justify-content-center" id="basic-addon1">Last name: </span>
+                        <input type="text" class="form-control" placeholder="@employee.lastname" aria-label="Lastname" aria-describedby="basic-addon1" @bind-value="updatedEmployee.lastname">
+                    </div>
+                    <div class="input-group d-flex justify-content-center mb-3">
+                        <span class="input-group-text w-30 justify-content-center" id="basic-addon1">Job role: </span>
+                        <input type="text" class="form-control" placeholder="@employee.jobrole" aria-label="Jobrole" aria-describedby="basic-addon1" @bind-value="updatedEmployee.jobrole">
+                    </div>
+                    <div class="input-group d-flex justify-content-center mb-3">
+                        <span class="input-group-text w-30 justify-content-center" id="basic-addon1">Department: </span>
+                        <input type="text" class="form-control" placeholder="@employee.department" aria-label="Department" aria-describedby="basic-addon1" @bind-value="updatedEmployee.department">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                        <button type="submit" class="btn btn-success mb-3" @onclick="(()=>SaveChanges(updatedEmployee))">Save changes</button>
+                        <button type="button" class="btn btn-danger" @onclick="Close">Close</button>
+                    </div> 
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    Employee employee = new Employee();
+    Employee updatedEmployee = new Employee();
+
+    public bool empNotPresent = true;
+
+    public async void SelectedEmployee(Employee employee)
+    {
+        this.employee = employee;
+        updatedEmployee.id = employee.id;
+        empNotPresent = false;
+    }
+
+    public async Task SaveChanges(Employee updatedEmployee)
+    {
+        var result = await EmployeeService.UpdateEmployee(updatedEmployee);
+    }
+
+    public async Task Close()
+    {
+        empNotPresent = true;
+    }
+}

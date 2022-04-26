@@ -34,25 +34,25 @@ namespace MyEmployees.Server.Controllers
             return Ok(employees[id]);
         }
 
-        public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
-        {
-            try
-            {
-                var employeeToUpdate = await GetEmployee(employee.id);
+        /* public async Task<ActionResult<Employee>> UpdateEmployee(Employee employee)
+         {
+             try
+             {
+                 var employeeToUpdate = await GetEmployee(employee.id);
 
-                if (employeeToUpdate == null)
-                {
-                    return NotFound($"Employee with Id = {employee.id} not found");
-                }
-                employeeToUpdate = employee;
-                return await;
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error updating data");
-            }
-        }
+                 if (employeeToUpdate == null)
+                 {
+                     return NotFound($"Employee with Id = {employee.id} not found");
+                 }
+                 employeeToUpdate = employee;
+                 return await;
+             }
+             catch (Exception)
+             {
+                 return StatusCode(StatusCodes.Status500InternalServerError,
+                     "Error updating data");
+             }
+         }*/
 
     }
 }

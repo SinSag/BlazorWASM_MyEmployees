@@ -198,14 +198,14 @@
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
       "MyEmployees.Shared.dll": "sha256-NxfKOFPuvs12EeTgjta\/ZWR6s0yVrt7n2ww+ASPxlHw=",
-      "MyEmployees.Client.dll": "sha256-mn4Inee3Jl4B1cW7tCaXRZMijVf4TAfrjSv5\/NUC\/Q0="
+      "MyEmployees.Client.dll": "sha256-7WC9Nly2hT\/7MVNhGMxt5uZxxCcVDhaGBrQ5f6kqFcQ="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "MyEmployees.Shared.pdb": "sha256-WwddkfRZ1RbsqyUlb0aL6kLM\/4+IT92WEZRJUbRnxo4=",
-      "MyEmployees.Client.pdb": "sha256-eNUftDt\/UHN2yKPv0AUqr\/mLlZuOmCE2LJsG5AfH8CI="
+      "MyEmployees.Client.pdb": "sha256-VfHuP3YC5Bps0L92RB\/LqipR4J26ea9RhyjoXdlwadE="
     },
     "runtime": {
       "dotnet.6.0.3.k4rg04dpep.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",
